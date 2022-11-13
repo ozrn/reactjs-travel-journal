@@ -1,6 +1,8 @@
+import Navbar from "./Navbar"
+
 export default function App() {
   return (
 
-    <h1>Welcome to my travel journal</h1>
+    <Navbar />
   )
 }
