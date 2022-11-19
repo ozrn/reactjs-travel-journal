@@ -1,20 +1,20 @@
-export default function CityCard() {
-
+export default function CityCard(props) {
+console.log(props);
   return (
 
     <div className = "city-card">
 
-      <img src = "/images/unsplash-anıtkabir.png" className = "city-img" alt="Anıtkabir" />
+      <img src = {props.img} className = "city-img" alt="Anıtkabir" />
 
       <div className = "city-infocard">
 
-          <p className = "country">Ankara, Turkey</p>
+          <p className = "country">{props.country}</p>
 
-          <h3 className = "place">Anıtkabir</h3>
+          <h3 className = "place">{props.place}</h3>
 
-          <h4 className = "travel-dates">01 Oct 2022 - 14 Oct 2022</h4>
+          <h4 className = "travel-dates">{props.dates}</h4>
 
-          <p className = "place-definition">Anıtkabir is the mausoleum of Mustafa Kemal Atatürk, the leader of the Turkish War of Independence and the founder and the first President of the Republic of Turkey.</p>
+          <p className = "place-definition">{props.definition}</p>
 
     </div>
 
