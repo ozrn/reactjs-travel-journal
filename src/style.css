@@ -45,6 +45,11 @@ nav {
   padding: 25px;
 }
 
+.travel-dates {
+  display: inline;
+  padding: 5px;
+}
+
 .place-definition {
   width: 500px;
   font-size: 0.95rem;

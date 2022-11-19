@@ -1,19 +1,27 @@
 import Navbar from "./Navbar"
 import CityCard from "./CityCard"
-//import data from"./data.js"
+import data from"./data.js"
 
 export default function App() {
+
+  const travelDatas = data.map(travelData => {
+
+    return <CityCard
+     img = {travelData.imageSource}
+     alt = {travelData.title}
+     place = {travelData.title}
+     country = {travelData.location}
+     startDate = {travelData.startDate}
+     endDate = {travelData.endDate}
+     description = {travelData.description}
+     />
+
+  })
 
   return (
    <div>
      <Navbar />
-     <CityCard
-      img = "/images/unsplash-anıtkabir.png"
-      country = "Ankara, Turkey"
-      place = "Anıtkabir"
-      dates = "01 Oct 2022 - 14 Oct 2022"
-      definition = "Anıtkabir is the mausoleum of Mustafa Kemal Atatürk, the leader of the Turkish War of Independence and the founder and the first President of the Republic of Turkey."
-       />
+     {travelDatas}
    </div>
   )
 }
