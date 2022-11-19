@@ -10,22 +10,23 @@ body {
 nav {
   background-color: #F55A5A;
   display: flex;
-  height: 80px;
+  height: 100px;
   padding: 20px 40px;
-  box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.28);
+  box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.35);
 }
 
 .nav-text {
   color: #FFFF;
   position: absolute;
   width: 200px;
-  left:600px;
+  left: 600px;
   top: 10px;
   font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .city-card {
-  width:310px;
+  width: 400px;
   font-size: 14px;
   flex: 0 0 auto;
   display: flex;
@@ -34,24 +35,41 @@ nav {
 }
 
 .city-img {
-  width: 100%;
+  width: 110%;
   height: 80%;
   border-radius: 20px;
-  margin: 30px 0 0 30px;
+  margin: 30px 0 20px 150px;
 }
 
 .city-infocard {
-  display: inline-block;
   padding: 25px;
+}
+
+.country {
+  font-size: 0.85rem;
 }
 
 .travel-dates {
   display: inline;
-  padding: 5px;
+  margin: 1.5px;
 }
 
 .place-definition {
-  width: 500px;
+  width: 550px;
   font-size: 0.95rem;
-  letter-spacing: 1.2px;
+  line-height: 2rem;
+  letter-spacing: 1.3px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 25px;
+}
+
+.footer-text, .copyright-text {
+  font-size: 0.9rem;
+  height: 0.6rem;
 }

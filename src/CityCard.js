@@ -12,7 +12,7 @@ export default function CityCard(props) {
 
           <p className = "country">{props.travelData.location}</p>
 
-          <h4 className = "travel-dates">{props.travelData.startDate}</h4>
+          <h4 className = "travel-dates">{props.travelData.startDate} -</h4>
 
           <h4 className = "travel-dates">{props.travelData.endDate}</h4>
 
