@@ -23,3 +23,30 @@ nav {
   top: 10px;
   font-size: 1.5rem;
 }
+
+.city-card {
+  width:310px;
+  font-size: 14px;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.city-img {
+  width: 100%;
+  height: 80%;
+  border-radius: 20px;
+  margin: 30px 0 0 30px;
+}
+
+.city-infocard {
+  display: inline-block;
+  padding: 25px;
+}
+
+.place-definition {
+  width: 500px;
+  font-size: 0.95rem;
+  letter-spacing: 1.2px;
+}
