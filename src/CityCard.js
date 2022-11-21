@@ -1,8 +1,19 @@
 export default function CityCard(props) {
 
+  let badgeText
+
+  if (props.travelData.visited) {
+      badgeText = "visited"
+  } else {
+    badgeText = "upcoming"
+  }
+
+
   return (
 
     <div className = "city-card">
+
+      {badgeText && <div className = "badge-text">{badgeText}</div>}
 
       <img src = {props.travelData.imageSource} className = "city-img" alt={props.travelData.title} />
 

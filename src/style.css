@@ -34,11 +34,22 @@ nav {
   position: relative;
 }
 
+
 .city-img {
   width: 110%;
   height: 80%;
   border-radius: 20px;
   margin: 30px 0 20px 150px;
+}
+
+.badge-text{
+  position: absolute;
+  top: 50px;
+  left: 160px;
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: bold;
 }
 
 .city-infocard {
